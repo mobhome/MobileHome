@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+img{
+    border-radius: 8%;  
+}
+.categories img{
+    height: 20%;
+    width: 30%;
+}
+.small-container img{
+    height: 20%;
+    width: 30%;
+}
+.col-2 img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -11,7 +26,12 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: #D4ECDD;
 }
+.navbar a:hover{
+    color: #82DBD8;
+}
+
 .logo img{
     border-radius: 100%;
 }
@@ -21,7 +41,7 @@ nav{
 }
 nav ul{
     display: inline-block;
-    list-style-type: none;
+    list-style-type: none; 
 }
 nav ul li{
     display: inline-block;
@@ -45,6 +65,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
 .col-2{
     flex-basis: 50%;
@@ -72,7 +93,7 @@ p{
     background: #8d7373;
 }
 .header{
-    background: radial-gradient(#fff,#fffafa);
+    background: white;
 }
 .header .row{
     margin-top: 70px;
@@ -132,11 +153,11 @@ h4{
 .col-4:hover{
     transform: translateY(-5px);
 }
-/-----------offer----------/
+/*-----------offer----------*/
 .offer{
     background: radial-gradient(#fff,#fffafa);
     margin-top: 80px;
-    padding: 30px 0;
+    padding: 30px 0; 
 }
 .col-2 .offer-img{
     padding: 70px;
@@ -144,7 +165,7 @@ h4{
 small{
     color: #555;
 }
-/--------brands--------/
+/*--------brands--------*/
 .brands{
     margin: 100px auto;
 }
@@ -159,7 +180,7 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-/------Footer------/
+/*------Footer------*/
 .footer{
     background: #000;
     color: #8a8a8a;
@@ -175,7 +196,7 @@ small{
 }
 .footer-col-1, .footer-col-2, .footer-col-3{
     min-width: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 .footer-col-1{
      flex-basis: 30%;
@@ -207,7 +228,7 @@ ul{
     margin-left: 20px;
     display: none;
 }
-/-------media query for menu-------/
+/*-------media query for menu-------*/
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -232,7 +253,7 @@ ul{
         cursor: pointer;
     }
 }
-/-------media query for less than 600 screen size-------/
+/*-------media query for less than 600 screen size-------*/
 @media only screen and (max-width: 600px){
     .row{
         text-align: center;
